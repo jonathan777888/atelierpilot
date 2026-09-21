@@ -182,3 +182,64 @@ h2 { font-size: clamp(1.5rem, 3vw, 2.35rem); margin-bottom: 14px; }
   .quizActions { align-items: flex-start; flex-direction: column; }
   h1 { font-size: clamp(2.35rem, 13vw, 3.55rem); }
 }
+
+
+/* Final writing planner */
+.finalDeadline { margin-bottom: 22px; }
+.draftPlanner { display: grid; gap: 18px; }
+.draftOverview {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 320px);
+  gap: 24px;
+  align-items: center;
+  padding: 26px;
+  background: var(--forest);
+  color: white;
+  border-radius: 22px;
+}
+.draftOverview h2 { margin-bottom: 8px; }
+.draftOverview .muted { color: rgba(255,255,255,.72); margin: 0; }
+.draftOverview .eyebrow { color: var(--wood-light); }
+.draftProgress { display: grid; gap: 5px; }
+.draftProgress strong { font-size: 2rem; line-height: 1; }
+.draftProgress span { font-size: .88rem; color: rgba(255,255,255,.75); }
+.progressTrack { height: 9px; overflow: hidden; border-radius: 999px; background: rgba(255,255,255,.18); margin-top: 7px; }
+.progressTrack span { display: block; height: 100%; border-radius: inherit; background: var(--wood-light); transition: width .25s ease; }
+.projectFields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 22px; background: white; border: 1px solid var(--line); border-radius: 18px; }
+.projectFields label, .notesLabel { display: grid; gap: 7px; color: var(--forest); font-size: .86rem; font-weight: 800; }
+.projectFields input, .notesLabel textarea {
+  width: 100%;
+  border: 1px solid #b7c4ba;
+  border-radius: 11px;
+  background: white;
+  color: var(--ink);
+  padding: 12px 14px;
+}
+.notesLabel textarea { min-height: 150px; resize: vertical; line-height: 1.5; font-weight: 400; }
+.projectFields input:focus, .notesLabel textarea:focus { outline: 3px solid rgba(52,107,77,.14); border-color: var(--forest-2); }
+.draftSectionGrid { display: grid; gap: 16px; }
+.draftSection { padding: 26px; background: white; border: 1px solid var(--line); border-radius: 20px; }
+.draftSectionHeader { display: flex; gap: 14px; align-items: center; margin-bottom: 14px; }
+.draftSectionHeader h2 { font-size: 1.55rem; margin: 0 0 4px; }
+.draftSectionHeader p { margin: 0; color: var(--muted); font-size: .86rem; font-weight: 700; }
+.draftNumber { width: 46px; height: 46px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 12px; background: var(--forest); color: white; font-weight: 900; }
+.draftGoal { margin: 0 0 18px; padding: 13px 15px; background: var(--cream); border-radius: 11px; color: #5b4b35; }
+.draftChecklist { display: grid; gap: 8px; margin-bottom: 20px; }
+.draftCheck { display: grid; grid-template-columns: auto 1fr; gap: 11px; align-items: start; padding: 11px 12px; border-radius: 10px; background: #f7faf7; cursor: pointer; }
+.draftCheck input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--forest); }
+.draftCheck:has(input:checked) span { color: var(--muted); text-decoration: line-through; }
+.draftActions { position: sticky; bottom: 12px; z-index: 8; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px 20px; background: rgba(255,255,255,.96); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); backdrop-filter: blur(10px); }
+.draftActions p { margin: 3px 0 0; color: var(--muted); font-size: .86rem; }
+.draftButtons { display: flex; gap: 9px; flex-wrap: wrap; }
+.secondaryButton { border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); padding: 14px 18px; font-weight: 800; cursor: pointer; }
+.secondaryButton:hover { background: #f5f5f2; }
+
+@media (max-width: 900px) {
+  .draftOverview, .projectFields { grid-template-columns: 1fr; }
+  .draftActions { position: static; align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 680px) {
+  .draftSection { padding: 20px; }
+  .draftButtons { width: 100%; }
+  .draftButtons button { flex: 1 1 auto; }
+}
