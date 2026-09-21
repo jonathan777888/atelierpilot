@@ -32,6 +32,7 @@ export default function Home() {
           <SectionCard href="/outillage" icon="🔧" title="Outillage">Catégories d’outils manuels et outils électriques du cours.</SectionCard>
           <SectionCard href="/machines" icon="⚙️" title="Machines">Les huit machines présentées dans le module 2.</SectionCard>
           <SectionCard href="/quiz" icon="🧠" title="Quiz">Teste les informations réellement présentes dans les documents.</SectionCard>
+          <SectionCard href="/redaction-finale" icon="📝" title="Rédaction finale">Prépare chaque partie de l’épreuve finale avec une liste de contrôle et tes propres notes.</SectionCard>
           <SectionCard href="/sources" icon="📚" title="Sources">Ce qui vient des modules et ce qui reste à compléter en classe.</SectionCard>
         </div>
       </section>
