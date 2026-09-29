@@ -11,6 +11,11 @@ const questions = [
   { q: "Une verge correspond à…", choices: ["24 pouces", "36 pouces", "48 pouces"], answer: 1 },
   { q: "Laquelle apparaît dans la liste des outils électriques du cours ?", choices: ["Toupie", "Étau", "Équerre"], answer: 0 },
   { q: "Avant d’opérer une machine, le cours demande notamment de…", choices: ["Comprendre son fonctionnement et identifier les dangers", "Travailler le plus vite possible", "Retirer les accessoires de sécurité"], answer: 0 },
+  { q: "Quelle est la première étape avant de construire un bâtiment agricole ?", choices: ["Évaluer les besoins", "Poser les chevrons", "Faire la finition"], answer: 0 },
+  { q: "Quel élément doit être considéré dans le choix du site ?", choices: ["Le drainage", "La couleur des outils", "La marque des vis"], answer: 0 },
+  { q: "Quel organisme est présenté comme la porte d’entrée pour les permis ?", choices: ["La municipalité", "Le fournisseur de bois", "Le fabricant de toiture"], answer: 0 },
+  { q: "Que demande la stabilité des fondations selon le cours ?", choices: ["Une assise sous la ligne de gel", "Une toiture terminée", "Un plancher peint"], answer: 0 },
+  { q: "À quel moment faut-il prévoir la plomberie, l’électricité et la ventilation ?", choices: ["Avant de fermer", "Après toute la finition", "Seulement après l’occupation"], answer: 0 },
 ];
 
 export function Quiz() {
