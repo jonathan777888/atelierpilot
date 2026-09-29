@@ -7,7 +7,7 @@ export default function Home() {
         <div className="heroText">
           <p className="eyebrow">Charpenterie & menuiserie</p>
           <h1>Ton cours, organisé dans une application simple.</h1>
-          <p className="lead">AtelierPilot transforme les modules 1 et 2 en fiches de révision, outils de mesure et quiz. Le labo du minot de pommes n’est pas intégré.</p>
+          <p className="lead">AtelierPilot transforme tes documents de cours en fiches de révision, outils de mesure et quiz. Le nouveau module Bâtiment agricole reprend les grandes étapes de planification et d’érection.</p>
           <div className="heroBadges" aria-label="Caractéristiques principales">
             <span>Basé sur tes fichiers</span>
             <span>Responsive</span>
@@ -31,6 +31,7 @@ export default function Home() {
           <SectionCard href="/mesures" icon="📐" title="Mesures">Pouces, pieds, verges, fractions et conversion.</SectionCard>
           <SectionCard href="/outillage" icon="🔧" title="Outillage">Catégories d’outils manuels et outils électriques du cours.</SectionCard>
           <SectionCard href="/machines" icon="⚙️" title="Machines">Les huit machines présentées dans le module 2.</SectionCard>
+          <SectionCard href="/batiment" icon="🏗️" title="Bâtiment agricole">Planification, règlementation, fondations, structure, toiture et grandes étapes du chantier.</SectionCard>
           <SectionCard href="/quiz" icon="🧠" title="Quiz">Teste les informations réellement présentes dans les documents.</SectionCard>
           <SectionCard href="/redaction-finale" icon="📝" title="Rédaction finale">Prépare chaque partie de l’épreuve finale avec une liste de contrôle et tes propres notes.</SectionCard>
           <SectionCard href="/sources" icon="📚" title="Sources">Ce qui vient des modules et ce qui reste à compléter en classe.</SectionCard>
