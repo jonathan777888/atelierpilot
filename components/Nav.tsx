@@ -6,6 +6,7 @@ const links = [
   ["/mesures", "Mesures"],
   ["/outillage", "Outillage"],
   ["/machines", "Machines"],
+  ["/batiment", "Bâtiment"],
   ["/quiz", "Quiz"],
   ["/redaction-finale", "Rédaction finale"],
   ["/sources", "Sources"],
