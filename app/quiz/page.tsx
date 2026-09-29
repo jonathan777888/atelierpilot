@@ -5,8 +5,8 @@ export default function QuizPage() {
     <div className="shell pageShell">
       <header className="pageHeader">
         <p className="eyebrow">Révision</p>
-        <h1>Quiz des modules 1 et 2</h1>
-        <p className="lead">Toutes les réponses sont basées sur les informations écrites dans les deux documents.</p>
+        <h1>Quiz AtelierPilot</h1>
+        <p className="lead">Les questions couvrent maintenant les modules de base ainsi que les grandes étapes de la construction d’un bâtiment agricole.</p>
       </header>
       <Quiz />
     </div>
